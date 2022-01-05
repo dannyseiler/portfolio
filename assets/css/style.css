@@ -228,7 +228,7 @@ body.dark main h1:hover, body.dark main h2:hover, body.dark main h3:hover, body.
 /* About me */
 .about-container {
   position: relative;
-  width: 80%;
+  width: 100%;
   height: 100vh;
   margin: auto;
   display: -webkit-box;
@@ -313,7 +313,7 @@ body.dark main h1:hover, body.dark main h2:hover, body.dark main h3:hover, body.
 .work-container {
   position: relative;
   margin: 0px auto;
-  width: 80%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,6 +337,7 @@ body.dark main h1:hover, body.dark main h2:hover, body.dark main h3:hover, body.
 }
 
 .proyect-content {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,7 +353,7 @@ body.dark main h1:hover, body.dark main h2:hover, body.dark main h3:hover, body.
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 100vh;
+  height: 150vh;
 }
 
 .proyect-content-1,
@@ -456,7 +457,7 @@ body.dark .link-more-info:hover, body.dark
 /* Skills Section */
 .skills-container {
   position: relative;
-  width: 80%;
+  width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -533,7 +534,7 @@ body.dark footer a:hover {
 }
 
 .contact-container {
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -781,8 +782,11 @@ body.dark footer a:hover {
     margin-top: 0px;
     text-align: center;
   }
-  .title-container h1 {
-    margin: 20px;
+  .title-container h1,
+  .work-container h1,
+  .skills-container h1 {
+    text-align: center;
+    font-size: 2.6em;
   }
   .img {
     margin-bottom: 30px;
@@ -810,6 +814,7 @@ body.dark footer a:hover {
   .subtitle1 p {
     padding: 20px 0;
     margin: 20px;
+    font-size: 1.3em;
   }
   .paragraph {
     width: 70vw;
@@ -832,14 +837,17 @@ body.dark footer a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .proyect-content-1,
   .proyect-content-2,
   .proyect-content-3 {
     margin: 20px 0;
+    border: 1px solid transparent;
     width: 100%;
+    background-color: none;
   }
   .proyect-content-1:hover,
   .proyect-content-2:hover,
@@ -850,6 +858,10 @@ body.dark footer a:hover {
   .proyect-content-2 img,
   .proyect-content-3 img {
     width: 100%;
+  }
+  .work-info-container h3 {
+    font-size: 1.5em;
+    font-weight: 400;
   }
   .link-more-info {
     padding: 13px;
