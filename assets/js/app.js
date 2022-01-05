@@ -18,7 +18,7 @@ window.onload = function () {
   });
 };
 
-/*
+
 // Switch
 const btnSwitch = document.querySelector("#switch");
 
@@ -42,4 +42,3 @@ if (localStorage.getItem("dark-mode") === "true") {
   document.body.classList.remove("dark");
   btnSwitch.classList.remove("active");
 }
-*/
