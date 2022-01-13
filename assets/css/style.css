@@ -274,6 +274,73 @@ body.dark main h1:hover, body.dark main h2:hover, body.dark main h3:hover, body.
   color: #ACABAB;
 }
 
+.title-container h1 {
+  font-size: 4em;
+  font-weight: 400;
+}
+
+.work-container h2,
+.skills-container h2 {
+  font-size: 3.2em;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.work-info-container h3,
+.hard-skills-container h3,
+.soft-skills-container h3 {
+  font-size: 1.7em;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.link-more-info,
+.download-section {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background-color: #4e95e7;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 10px 14px -7px #111111;
+          box-shadow: 0px 10px 14px -7px #111111;
+  cursor: pointer;
+}
+
+.work-container a,
+.link-more-info a,
+.download-section a {
+  text-decoration: none;
+  color: #111111;
+  text-align: center;
+  margin: 10px auto;
+  padding: 11px 15px;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.link-more-info i {
+  padding-right: 5px;
+  font-size: 1.1em;
+}
+
+.link-more-info:hover,
+.download-section:hover {
+  background-color: #056cb6;
+}
+
+body.dark .link-more-info:hover, body.dark
+.download-section:hover {
+  background-color: #7aade7;
+}
+
+.link-more-info:active,
+.download-section:active {
+  position: relative;
+  top: 1px;
+}
+
 /* About me */
 .about-container {
   position: relative;
@@ -308,13 +375,6 @@ body.dark main h1:hover, body.dark main h2:hover, body.dark main h3:hover, body.
       -ms-flex-align: center;
           align-items: center;
   margin-top: 30px;
-}
-
-.title-container h1,
-.work-container h1,
-.skills-container h1 {
-  font-size: 4em;
-  font-weight: 400;
 }
 
 .about-info-container {
@@ -358,7 +418,7 @@ body.dark main h1:hover, body.dark main h2:hover, body.dark main h3:hover, body.
   text-align: justify;
 }
 
-/* Proyects */
+/* Projects */
 .work-container {
   position: relative;
   margin: 0px auto;
@@ -385,30 +445,32 @@ body.dark main h1:hover, body.dark main h2:hover, body.dark main h3:hover, body.
   scroll-margin-top: 130px;
 }
 
-.proyect-content {
+.project-content {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 150vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
-.proyect-content-1,
-.proyect-content-2,
-.proyect-content-3 {
+.project-content-1,
+.project-content-2,
+.project-content-3 {
+  width: 600px;
   padding: 10px;
+  margin: 10px;
   border: 1px solid transparent;
   border-radius: 10px;
   display: -webkit-box;
@@ -426,81 +488,82 @@ body.dark main h1:hover, body.dark main h2:hover, body.dark main h3:hover, body.
           align-items: center;
 }
 
-.proyect-content-1:hover,
-.proyect-content-2:hover,
-.proyect-content-3:hover {
+.project-content-1:hover,
+.project-content-2:hover,
+.project-content-3:hover {
   background-color: #e4e4e4;
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
 }
 
-body.dark .proyect-content-1:hover, body.dark
-.proyect-content-2:hover, body.dark
-.proyect-content-3:hover {
+body.dark .project-content-1:hover, body.dark
+.project-content-2:hover, body.dark
+.project-content-3:hover {
   background-color: #222222;
 }
 
-.proyect-content-1 img,
-.proyect-content-2 img,
-.proyect-content-3 img {
-  width: 400px;
+.project-content-1 img,
+.project-content-2 img,
+.project-content-3 img {
+  width: 500px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
-.work-info-container h3 {
-  font-size: 2em;
-  font-weight: 300;
-  padding-bottom: 20px;
+.project-1 p {
+  width: 500px;
+  text-align: justify;
+  padding-top: 20px;
 }
 
-/* Buttons */
-.link-more-info,
-.download-section {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px;
-  background-color: #4e95e7;
-  border-radius: 5px;
-  border: none;
-  text-decoration: none;
-  -webkit-box-shadow: 0px 10px 14px -7px #111111;
-          box-shadow: 0px 10px 14px -7px #111111;
-  cursor: pointer;
+.langs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.work-container a,
-.link-more-info a,
-.download-section a {
-  text-decoration: none;
+.langs ul {
+  padding-left: 35px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   color: #111111;
-  text-align: center;
-  margin: 0px auto;
-  padding: 11px 15px;
-  font-size: 1.1em;
+}
+
+.langs ul li {
+  margin: 5px;
+  padding: 5px;
+  width: 50px;
+  border-radius: 20px;
+  font-size: 0.6em;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
-.link-more-info i {
-  padding-right: 5px;
-  font-size: 1.1em;
+.langs ul li:nth-child(1) {
+  background-color: #E65100;
+  color: #ffffff;
 }
 
-.link-more-info:hover,
-.download-section:hover {
-  background-color: #056cb6;
+.langs ul li:nth-child(2) {
+  background-color: #1177BD;
+  color: #ffffff;
 }
 
-body.dark .link-more-info:hover, body.dark
-.download-section:hover {
-  background-color: #7aade7;
+.langs ul li:nth-child(3) {
+  background-color: #FFD600;
 }
 
-.link-more-info:active,
-.download-section:active {
-  position: relative;
-  top: 1px;
+.langs ul li:nth-child(4) {
+  background-color: #7757F4;
+  color: #ffffff;
 }
 
 /* Skills Section */
@@ -539,13 +602,6 @@ body.dark .link-more-info:hover, body.dark
   position: relative;
   width: 350px;
   margin: 30px auto;
-}
-
-.hard-skills-container h2,
-.soft-skills-container h2 {
-  font-size: 1.8em;
-  font-weight: 400;
-  padding-bottom: 20px;
 }
 
 .hard-skills-container ul,
@@ -729,7 +785,7 @@ body.dark footer a:hover {
     height: max-content;
     scroll-margin-top: 100px;
   }
-  .proyect-content {
+  .project-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -738,15 +794,15 @@ body.dark footer a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .proyect-content-1,
-  .proyect-content-2,
-  .proyect-content-3 {
+  .project-content-1,
+  .project-content-2,
+  .project-content-3 {
     margin: 20px 0;
     width: 100%;
   }
-  .proyect-content-1 img,
-  .proyect-content-2 img,
-  .proyect-content-3 img {
+  .project-content-1 img,
+  .project-content-2 img,
+  .project-content-3 img {
     width: 80%;
   }
   .link-more-info {
@@ -878,7 +934,7 @@ body.dark footer a:hover {
     height: max-content;
     scroll-margin-top: 130px;
   }
-  .proyect-content {
+  .project-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -886,27 +942,39 @@ body.dark footer a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
   }
-  .proyect-content-1,
-  .proyect-content-2,
-  .proyect-content-3 {
+  .project-content-1,
+  .project-content-2,
+  .project-content-3 {
     margin: 20px 0;
     border: 1px solid transparent;
     width: 100%;
     background-color: none;
   }
-  .proyect-content-1:hover,
-  .proyect-content-2:hover,
-  .proyect-content-3:hover {
+  .project-content-1:hover,
+  .project-content-2:hover,
+  .project-content-3:hover {
     padding: 0px;
   }
-  .proyect-content-1 img,
-  .proyect-content-2 img,
-  .proyect-content-3 img {
+  .project-content-1 img,
+  .project-content-2 img,
+  .project-content-3 img {
     width: 100%;
+  }
+  .project-1 p {
+    width: 100%;
+  }
+  .langs ul {
+    margin-top: 10px;
+    margin-left: 0;
+    padding-left: 0;
   }
   .work-info-container h3 {
     font-size: 1.5em;
